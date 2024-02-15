@@ -10,7 +10,7 @@ const client = new MongoClient(MONGO_URI, {
 });
 
 // returns a specific item
-const getItem = async (req, res) => {
+const findPitch = async (req, res) => {
 	try {
 		await client.connect();
 		const db = client.db('commerce');
